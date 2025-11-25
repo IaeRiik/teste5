@@ -1,0 +1,392 @@
+ ---------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --inputF: rgba(240, 240, 240, 0.72);
+    --fundo1: #ffffff08;
+    --fundo2: #ebebeb;
+    --fundo3: rgba(255, 255, 255, 0.13);
+
+    --text-cor: #1a1a1a;
+    --header-bg: #dadada;
+    --card-bg: #f0f0f0;
+    --border-color: #6a6464;
+    --border-tt: rgba(20, 20, 20, 0.3);
+
+    --menu-bg: #fff;
+    --menu-text: #1a1a1a;
+    --btn-cor: #1100fd;
+
+    --sombra: rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode {
+    --inputF: rgba(2, 2, 2, 0.6);
+    --fundo1: #000;
+    --fundo2: #1b1b1b;
+    --fundo3: rgba(255, 255, 255, 0.35);
+
+    --text-cor: #fff;
+    --header-bg:
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: var(--fundo2);
+    color: var(--text-cor);
+    line-height: 1.6;
+}
+
+
+:root {
+    --inputF: rgba(240, 240, 240, .6);
+
+    --fundo1: #ffffff0a;
+    --fundo2: #f2f2f2;
+    --fundo3: #ffffff22;
+
+    --header-bg: #ffffffcc;
+    --card-bg: #ffffffaa;
+    --border-color: rgba(0,0,0,0.15);
+
+    --text-cor: #1a1a1a;
+
+    --btn-cor: #0043ff;
+    --btn-hover: #0030bb;
+
+    --glass-blur: blur(12px);
+
+    --sombra: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode {
+    --inputF: rgba(0, 0, 0, .5);
+
+    --fundo1: #000000dd;
+    --fundo2: #121212;
+    --fundo3: #ffffff18;
+
+    --header-bg: #1a1a1acc;
+    --card-bg: #1c1c1cdd;
+    --border-color: rgba(255,255,255,0.15);
+
+    --text-cor: #ffffff;
+
+    --btn-cor: #005aff;
+    --btn-hover: #003baf;
+}
+
+
+header {
+    background: var(--header-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 15px 20px;
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#tema {
+    background: var(--btn-cor);
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#tema:hover {
+    background: var(--btn-hover);
+    transform: scale(1.06);
+}
+
+/* MENU */
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 15px 5px;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-cor);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: var(--btn-cor);
+}
+
+
+.pg-inicial {
+    min-height: 95vh;
+    background: var(--fundo1);
+    padding: 100px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.pg-inicial h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pg-inicial p {
+    color: var(--text-cor);
+    opacity: .8;
+    margin-bottom: 25px;
+}
+
+.pg-inicial a {
+    background: var(--btn-cor);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.pg-inicial a:hover {
+    background: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+#conteudo-principal {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#tecnologias {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.tec {
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    transition: .3s;
+    border: 1px solid var(--border-color);
+}
+
+.tec:hover {
+    transform: translateY(-7px);
+}
+
+.tec h3 {
+    margin-bottom: 12px;
+}
+
+.tec p {
+    opacity: .8;
+    text-align: justify;
+}
+
+
+#galeria {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.job {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.jobs {
+    width: 280px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: var(--sombra);
+    transition: .3s;
+}
+
+.jobs img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.jobs:hover {
+    transform: scale(1.05);
+}
+
+
+
+#contato {
+    padding: 50px 20px;
+    gap: 40px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#contato form {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--sombra);
+    backdrop-filter: var(--glass-blur);
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--inputF);
+    color: var(--text-cor);
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.btn {
+    background: var(--btn-cor);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-contato li {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border-color);
+    transition: .3s;
+    box-shadow: var(--sombra);
+}
+
+.lista-contato li:hover {
+    transform: translateX(5px);
+}
+
+.lista-contato a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-cor);
+}
+
+
+#video {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    max-width: 760px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+
+#topo {
+    margin-top: 20px;
+    background: var(--btn-cor);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#topo:hover {
+    background: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 900px) {
+
+    #contato {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .lista-contato {
+        width: 35%;
+    }
+}
