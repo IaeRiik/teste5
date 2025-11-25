@@ -317,21 +317,24 @@ textarea {
 }
 
 
-.lista-contato {
-    list-style: none;
-    padding: 0;
-}
 
-.lista-contato li {
+
+#contato li {
     background: var(--card-bg);
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 12px;
     border: 1px solid var(--border-color);
     transition: .3s;
+    list-style: none;
     box-shadow: var(--sombra);
 }
-
+#contato a{
+    font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: var(--text-cor);
+   
+}
 .lista-contato li:hover {
     transform: translateX(5px);
 }
