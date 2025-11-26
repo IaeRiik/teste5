@@ -44,6 +44,18 @@ document.querySelectorAll("#tecs").forEach(tecs =>{
     tecs.addEventListener("mouseleave",()=> tecs.classList.remove("zoom") );
 });
 
+let index = 0;
+const galeria = document.querySelectorAll(".jobs-item");
+
+function slideShow() {
+  galeria.forEach(e => e.style.display = "none");
+  galeria[index].style.display = "block";
+  index = (index + 1) % galeria.length;
+}
+
+slideShow();
+setInterval(slideShow, 3000);
+
 
 
 
@@ -59,4 +71,5 @@ document.getElementById("topo").addEventListener("click",function(){
     window.scrollTo({
         top:0, behavior: "smooth"
     })
+
 })
