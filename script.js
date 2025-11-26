@@ -45,7 +45,7 @@ document.querySelectorAll("#tecs").forEach(tecs =>{
 });
 
 let index = 0;
-const galeria = document.querySelectorAll(".jobs-item");
+const galeria = document.querySelectorAll(".jobs");
 
 function slideShow() {
   galeria.forEach(e => e.style.display = "none");
@@ -73,3 +73,4 @@ document.getElementById("topo").addEventListener("click",function(){
     })
 
 })
+
