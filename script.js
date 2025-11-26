@@ -44,26 +44,36 @@ document.querySelectorAll("#tecs").forEach(tecs =>{
     tecs.addEventListener("mouseleave",()=> tecs.classList.remove("zoom") );
 });
 
+
+
+// mov imagens
 let index = 0;
 const galeria = document.querySelectorAll(".jobs");
 
 function slideShow() {
+  
   galeria.forEach(e => e.style.display = "none");
-  galeria[index].style.display = "block";
+
+  // Mostra 3 imagens em sequência
+  for (let i = 0; i < 3; i++) {
+    let current = (index + i) % galeria.length; 
+    galeria[current].style.display = "block";
+  }
+
+  
   index = (index + 1) % galeria.length;
 }
 
 slideShow();
-setInterval(slideShow, 3000);
+setInterval(slideShow, 2000);
 
+const h1 = document.querySelector('.pg-inicial h1');
+const text = h1.textContent;
+h1.textContent = '';
 
-
-
-
-
-
-
-
+text.split('').forEach((char, i) => {
+    setTimeout(() => h1.textContent += char, 100 * i);
+});
 
 
 document.getElementById("topo").addEventListener("click",function(){
@@ -73,4 +83,3 @@ document.getElementById("topo").addEventListener("click",function(){
     })
 
 })
-
