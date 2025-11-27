@@ -6,9 +6,9 @@ const form = document.querySelector("#form");
 form.addEventListener('submit',(e)=>{
 let enviarForm = true;
     if(!nome.value  || !numero.value || !msg.value){
-        alert("CAMPO VAZIO! TROCARA MENSAGEM")
+        alert("EXISTE CAMPOS VAZIOS")
     }else{
-        alert("DEU CERTP! TROCA A PORRA DA MENSAGEM")
+        alert("MENSAGEM ENVIADA")
         renderizar()
     }
 
@@ -83,3 +83,4 @@ document.getElementById("topo").addEventListener("click",function(){
     })
 
 })
+
